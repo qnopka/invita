@@ -1,0 +1,18 @@
+.navbar-light .navbar-toggler {
+  padding: 10px;
+  border-color: rgba(0,0,0,.2);
+}
+
+.navbar-light .navbar-nav .nav-link {
+  color: rgba(0,0,0,.8);
+  transition: all 0.2s ease-in-out;
+
+  &:hover,
+  &:active{
+    color: $color-accent;
+    font-weight: 700;
+  }
+}
+.navbar-brand {
+  margin-right: 0;
+}

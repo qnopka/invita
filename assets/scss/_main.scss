@@ -1,0 +1,69 @@
+.category {
+
+  &--big {
+    min-height: 50vh;
+  }
+  &__img {
+    max-width: 100%;
+    height: 100%;
+    padding: 5vh 10px;
+    object-fit: contain;
+  }
+
+  &__title,
+  &__description{
+    padding: 30px 40px;
+  }
+
+  &__btn {
+    background-color: transparent;
+    border: 1px solid $color-accent;
+    padding: 14px (2* $gap) 10px;
+    margin-top: 10px;
+    position: relative;
+    color: $color-accent;
+    transition: all 0.3s ease-in-out;
+
+
+    &::before {
+      content: '';
+      background: transparent;
+      border: 1px solid $color-accent;
+      margin-left: 10px;
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 8px;
+      left: 0;
+      z-index: 10;
+      transition: all 0.3s ease-in-out;
+
+    }
+    &:hover {
+      padding: 12px (2* $gap) 12px;
+      &::before {
+        transform: translate(-10px, -8px);
+        border: 1px solid rgba($color-accent, .1);
+      }
+    }
+    }
+  }
+
+@media (min-width: 992px) {
+  .mini p{
+    color: transparent;
+  }
+
+  .mini img,
+  .mini p{
+    transition: all 0.4s ease-in-out;
+  }
+
+  .mini:hover img {
+    transform: scale(1.1);
+  }
+
+  .mini:hover p{
+    color: $color-dark;
+  }
+}

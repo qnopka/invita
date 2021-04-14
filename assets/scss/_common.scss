@@ -1,0 +1,47 @@
+body {
+  font-family: $font;
+  background-color: $color-primary;
+  word-wrap: break-word;
+}
+
+a {
+  color: rgba(0,0,0,.8);
+  transition: all 0.2s ease-in-out;
+
+  &:hover,
+  &:active{
+    color: $color-accent;
+    font-weight: 700;
+  }
+}
+
+h2 {
+  font-size: 2em;
+  letter-spacing: 0.05em;
+}
+
+p {
+  line-height: 2em;
+}
+
+@media (max-width: 992px) {
+  h2 {
+    font-size: 1.75em;
+  }
+  p {
+    line-height: 1.75em;
+  }
+
+}
+
+.background-light-grey {
+  background-color: $color-light-grey;
+}
+
+.background-grey {
+  background-color: $color-grey;
+}
+
+.background-primary {
+  background-color: $color-primary;
+}
