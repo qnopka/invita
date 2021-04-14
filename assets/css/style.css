@@ -518,6 +518,7 @@ p {
 
 header {
   z-index: 99;
+  background-color: #e6e6e6;
 }
 
 .vertical-nav {
@@ -669,9 +670,14 @@ header {
   }
   .mini p {
     color: transparent;
+    position: relative;
+    left: -50%;
+    -webkit-transition: left 0.3s ease-in-out;
+    -o-transition: left 0.3s ease-in-out;
+    transition: left 0.3s ease-in-out;
+    z-index: -100;
   }
-  .mini img,
-  .mini p {
+  .mini img {
     -webkit-transition: all 0.3s ease-in-out;
     -o-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
@@ -683,6 +689,10 @@ header {
   }
   .mini:hover p {
     color: #000000;
+    left: 0px;
+  }
+  .mini:hover .category__description {
+    background-color: #dddddd;
   }
 }
 

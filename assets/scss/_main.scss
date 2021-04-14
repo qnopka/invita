@@ -52,10 +52,13 @@
 @media (min-width: 992px) {
   .mini p{
     color: transparent;
+    position: relative;
+    left: -50%;
+    transition: left 0.3s ease-in-out;
+    z-index: -100;
   }
 
-  .mini img,
-  .mini p{
+  .mini img{
     transition: all 0.3s ease-in-out;
   }
 
@@ -63,7 +66,14 @@
     transform: scale(1.1);
   }
 
-  .mini:hover p{
-    color: $color-dark;
+  .mini:hover {
+    p{
+      color: $color-dark;
+      left: 0px;
+    }
+
+    & .category__description {
+      background-color: $color-light-grey;
+    }
   }
 }
