@@ -140,6 +140,7 @@
 
   &__title {
     padding-bottom: 2vw;
+    font-weight: 700;
   }
 
   &__description {
@@ -190,5 +191,11 @@
 @media (max-width: 768px) {
   .details {
     padding: 5vw;
+  }
+}
+
+@media (max-width: 576px) {
+  .details {
+    padding: 2vw;
   }
 }

@@ -694,6 +694,7 @@ header {
 
 .details__title {
   padding-bottom: 2vw;
+  font-weight: 700;
 }
 
 .details__description {
@@ -810,6 +811,12 @@ header {
   }
   .details {
     padding: 5vw;
+  }
+}
+
+@media (max-width: 576px) {
+  .details {
+    padding: 2vw;
   }
 }
 
