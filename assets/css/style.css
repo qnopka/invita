@@ -501,6 +501,8 @@ h2 {
 }
 
 p {
+  font-size: 0.9em;
+  font-weight: normal;
   line-height: 2em;
 }
 
@@ -695,6 +697,9 @@ header {
   .mini:hover .category__description {
     background-color: #dddddd;
   }
+  .mini:hover .bg-desc-light {
+    background-color: #e6e6e6;
+  }
 }
 
 @media (max-width: 1200px) {
@@ -711,9 +716,6 @@ header {
     font-size: 1.75em;
   }
   .mini p {
-    display: none;
-  }
-  .category__description {
     display: none;
   }
 }

@@ -83,16 +83,15 @@
     & .category__description {
       background-color: $color-light-grey;
     }
+    & .bg-desc-light {
+      background-color: $color-primary;
+    }
   }
 }
 
 
 @media (max-width: 992px) {
   .mini p{
-    display: none;
-  }
-
-  .category__description {
     display: none;
   }
 }
