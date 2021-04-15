@@ -796,7 +796,7 @@ header {
     font-size: 1.75em;
   }
   .category__img-big {
-    margin: -15vw 0;
+    margin: -20vw 0 -15vw;
   }
   .category__description {
     padding: 0 40px;
