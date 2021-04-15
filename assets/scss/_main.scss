@@ -131,7 +131,7 @@
 
 
 .details {
-  padding: 7vw 15vw;
+  //padding: 7vw 15vw;
 
   &__wrapper {
     padding: 7vw 0;
@@ -189,12 +189,12 @@
 
 @media (max-width: 768px) {
   .details {
-    padding: 5vw;
+    //padding: 5vw;
   }
 }
 
 @media (max-width: 576px) {
   .details {
-    padding: 2vw;
+    //padding: 2vw;
   }
 }
