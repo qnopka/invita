@@ -8,6 +8,12 @@
     height: 100%;
     padding: 5vh;
     object-fit: contain;
+
+    &-big {
+      max-width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
   }
 
   &__title,
@@ -105,5 +111,45 @@
 @media (min-width: 992px) {
   .category-small {
     min-height: 23vw;
+  }
+}
+
+
+.back {
+  width: 100px;
+  height: 100px;
+  background-color: $color-accent-light;
+  color: $color-light;
+}
+
+
+.details {
+  padding-top: 7vw;
+  &-btn {
+    border: 1px solid $color-dark;
+    padding: 15px 20px;
+    width: 100%;
+    background-color: transparent;
+    transition: all 0.4s ease-in-out;
+    margin-bottom: 10px;
+
+    &:first-of-type {
+      margin-right: 10px;
+
+    }
+
+    &:hover,
+    &:active {
+      background-color: $color-accent-light;
+      color: $color-light;
+      border-color: rgba($color-accent, 0.5);
+    }
+  }
+
+  @media (min-width: 768px) and (max-width: 992px) {
+    &-btn {
+      font-size: 0.9em;
+      padding: 15px 5px;
+    }
   }
 }
