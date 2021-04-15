@@ -703,4 +703,7 @@ header {
   p {
     line-height: 1.75em;
   }
+  .mini p {
+    display: none;
+  }
 }
