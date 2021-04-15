@@ -683,10 +683,6 @@ header {
   color: #bd2222;
 }
 
-.details {
-  padding: 7vw 15vw;
-}
-
 .details__wrapper {
   padding: 7vw 0;
 }
@@ -807,15 +803,6 @@ header {
 @media (max-width: 768px) {
   .details__price {
     padding: 5vw;
-  }
-  .details {
-    padding: 5vw;
-  }
-}
-
-@media (max-width: 576px) {
-  .details {
-    padding: 2vw;
   }
 }
 
