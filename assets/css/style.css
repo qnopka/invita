@@ -495,6 +495,10 @@ a:hover, a:active {
   font-weight: 700;
 }
 
+h1 {
+  font-size: 2.5em;
+}
+
 h2 {
   font-size: 2em;
   letter-spacing: 0.05em;
@@ -675,11 +679,24 @@ header {
   color: #ffffff;
 }
 
-.details {
-  padding-top: 7vw;
+.back-link:hover, .back-link:active {
+  text-decoration: none;
+  color: #bd2222;
 }
 
-.details-btn {
+.details {
+  padding: 7vw 15vw;
+}
+
+.details__title {
+  padding-bottom: 2vw;
+}
+
+.details__description {
+  padding-right: 2.25vw;
+}
+
+.details__btn {
   border: 1px solid #000000;
   padding: 15px 20px;
   width: 100%;
@@ -690,18 +707,18 @@ header {
   margin-bottom: 10px;
 }
 
-.details-btn:first-of-type {
+.details__btn:first-of-type {
   margin-right: 10px;
 }
 
-.details-btn:hover, .details-btn:active {
+.details__btn:hover, .details__btn:active {
   background-color: #ab9f9f;
   color: #ffffff;
   border-color: rgba(189, 34, 34, 0.5);
 }
 
 @media (min-width: 768px) and (max-width: 992px) {
-  .details-btn {
+  .details__btn {
     font-size: 0.9em;
     padding: 15px 5px;
   }
@@ -751,6 +768,9 @@ header {
 }
 
 @media (max-width: 1200px) {
+  h1 {
+    font-size: 2.5em;
+  }
   p {
     line-height: 1.5em;
   }
@@ -760,6 +780,9 @@ header {
 }
 
 @media (max-width: 992px) {
+  h1 {
+    font-size: 2.25em;
+  }
   h2 {
     font-size: 1.75em;
   }
@@ -768,5 +791,29 @@ header {
   }
   .mini p {
     display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .details {
+    padding: 5vw;
+  }
+}
+
+@media (max-width: 568px) {
+  h1 {
+    font-size: 2em;
+  }
+  h2 {
+    font-size: 1.5em;
+  }
+}
+
+@media (max-width: 468px) {
+  h1 {
+    font-size: 1.75em;
+  }
+  h2 {
+    font-size: 1.4em;
   }
 }

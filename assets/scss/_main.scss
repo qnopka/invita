@@ -120,12 +120,29 @@
   height: 100px;
   background-color: $color-accent-light;
   color: $color-light;
+
+  &-link {
+    &:hover,
+    &:active {
+      text-decoration: none;
+      color: $color-accent;
+    }
+  }
 }
 
 
 .details {
-  padding-top: 7vw;
-  &-btn {
+  padding: 7vw 15vw;
+
+  &__title {
+    padding-bottom: 2vw;
+  }
+
+  &__description {
+    padding-right: 2.25vw;
+  }
+
+  &__btn {
     border: 1px solid $color-dark;
     padding: 15px 20px;
     width: 100%;
@@ -147,9 +164,15 @@
   }
 
   @media (min-width: 768px) and (max-width: 992px) {
-    &-btn {
+    &__btn {
       font-size: 0.9em;
       padding: 15px 5px;
     }
+  }
+}
+
+@media (max-width: 768px) {
+  .details {
+    padding: 5vw;
   }
 }
