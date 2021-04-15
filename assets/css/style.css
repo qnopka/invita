@@ -755,6 +755,7 @@ header {
     -o-transition: left 0.3s ease-in-out;
     transition: left 0.3s ease-in-out;
     z-index: -100;
+    display: none;
   }
   .mini img {
     -webkit-transition: all 0.3s ease-in-out;
@@ -770,12 +771,6 @@ header {
     color: #000000;
     left: 0px;
     z-index: 100;
-  }
-  .mini:hover .category__description {
-    background-color: #dddddd;
-  }
-  .mini:hover .bg-desc-light {
-    background-color: #e6e6e6;
   }
   .category-small {
     min-height: 23vw;

@@ -74,6 +74,7 @@
     left: -50%;
     transition: left 0.3s ease-in-out;
     z-index: -100;
+    display: none;
   }
 
   .mini img{
@@ -91,12 +92,12 @@
       z-index: 100;
     }
 
-    & .category__description {
-      background-color: $color-light-grey;
-    }
-    & .bg-desc-light {
-      background-color: $color-primary;
-    }
+    //& .category__description {
+    //  background-color: $color-light-grey;
+    //}
+    //& .bg-desc-light {
+    //  background-color: $color-primary;
+    //}
   }
 }
 
