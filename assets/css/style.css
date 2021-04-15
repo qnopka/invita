@@ -795,6 +795,10 @@ header {
   h2 {
     font-size: 1.75em;
   }
+  .category__img-big {
+    padding: 0;
+    width: 80%;
+  }
   .category__description {
     padding: 0 40px;
   }

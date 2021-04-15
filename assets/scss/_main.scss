@@ -12,6 +12,13 @@
       max-width: 100%;
       object-fit: contain;
     }
+
+    @media (max-width: 992px) {
+      &-big {
+        padding: 0;
+        width: 80%;
+      }
+    }
   }
 
   &__title,
