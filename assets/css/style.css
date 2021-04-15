@@ -687,7 +687,7 @@ header {
 }
 
 .details__wrapper {
-  padding: 7vw 0;
+  padding: 3vw 15vw;
 }
 
 .details__title {
@@ -724,6 +724,12 @@ header {
   background-color: #ab9f9f;
   color: #ffffff;
   border-color: rgba(189, 34, 34, 0.5);
+}
+
+.line {
+  height: 1px;
+  width: 25vw;
+  background-color: #ab9f9f;
 }
 
 @media (min-width: 768px) and (max-width: 992px) {
@@ -804,12 +810,12 @@ header {
   .mini p {
     display: none;
   }
+  .details__wrapper {
+    padding: 5vw 5vw;
+  }
 }
 
 @media (max-width: 768px) {
-  .details__price {
-    padding: 5vw;
-  }
   .details {
     padding: 5vw;
   }

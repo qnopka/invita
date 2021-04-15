@@ -139,7 +139,13 @@
   padding: 7vw 15vw;
 
   &__wrapper {
-    padding: 7vw 0;
+    padding: 3vw 15vw;
+  }
+
+  @media (max-width: 992px) {
+    &__wrapper {
+      padding: 5vw 5vw;
+    }
   }
 
   &__title {
@@ -155,12 +161,6 @@
     padding: 20px 0;
     font-size: 1.2em;
     font-weight: 800;
-  }
-
-  @media (max-width: 768px) {
-    &__price {
-      padding: 5vw;
-    }
   }
 
   &__btn {
@@ -202,4 +202,11 @@
   .details {
     padding: 2vw;
   }
+}
+
+
+.line {
+  height: 1px;
+  width: 25vw;
+  background-color: $color-accent-light;
 }
