@@ -690,9 +690,19 @@ header {
   .mini:hover p {
     color: #000000;
     left: 0px;
+    z-index: 100;
   }
   .mini:hover .category__description {
     background-color: #dddddd;
+  }
+}
+
+@media (max-width: 1200px) {
+  p {
+    line-height: 1.5em;
+  }
+  .category__title, .category__description {
+    padding: 20px;
   }
 }
 
@@ -700,10 +710,10 @@ header {
   h2 {
     font-size: 1.75em;
   }
-  p {
-    line-height: 1.75em;
-  }
   .mini p {
+    display: none;
+  }
+  .category__description {
     display: none;
   }
 }
