@@ -624,7 +624,6 @@ header {
 
 .category__img-big {
   max-width: 100%;
-  height: 100%;
   -o-object-fit: contain;
      object-fit: contain;
 }
