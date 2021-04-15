@@ -134,12 +134,28 @@
 .details {
   padding: 7vw 15vw;
 
+  &__wrapper {
+    padding: 7vw 0;
+  }
+
   &__title {
     padding-bottom: 2vw;
   }
 
   &__description {
     padding-right: 2.25vw;
+  }
+
+  &__price {
+    padding: 20px 0;
+    font-size: 1.2em;
+    font-weight: 800;
+  }
+
+  @media (max-width: 768px) {
+    &__price {
+      padding: 5vw;
+    }
   }
 
   &__btn {

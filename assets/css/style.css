@@ -688,12 +688,22 @@ header {
   padding: 7vw 15vw;
 }
 
+.details__wrapper {
+  padding: 7vw 0;
+}
+
 .details__title {
   padding-bottom: 2vw;
 }
 
 .details__description {
   padding-right: 2.25vw;
+}
+
+.details__price {
+  padding: 20px 0;
+  font-size: 1.2em;
+  font-weight: 800;
 }
 
 .details__btn {
@@ -795,6 +805,9 @@ header {
 }
 
 @media (max-width: 768px) {
+  .details__price {
+    padding: 5vw;
+  }
   .details {
     padding: 5vw;
   }
